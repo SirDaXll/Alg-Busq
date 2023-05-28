@@ -2,7 +2,7 @@
 
 # **Proyecto: Algoritmo de Busqueda**
 
-## **Enuncciado**
+## **Enunciado**
 
 
 

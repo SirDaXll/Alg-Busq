@@ -1,32 +1,16 @@
-
-
-# **Proyecto: Algoritmo de Busqueda**
+# **Proyecto Integrador: Programa de Algoritmos de Búsqueda**
 
 ## **Enunciado**
 
+Este proyecto consiste en crear un programa que implemente diferentes algoritmos de búsqueda en una variedad de estructuras de datos, como listas, árboles o grafos. Los usuarios que manipulen el programa, pueden ingresar un elemento que desean buscar, y este les mostrará la ubicación del elemento en la estructura de datos.
 
-
-Este proyecto consiste en crear un programa que implemente diferentes algoritmos de
-búsqueda en una variedad de estructuras de datos,como listas,árboles o grafos. 
-
-Los usuarios que manipulen el programa,pueden ingresar un elemento que de sean buscar,y este les
-mostrará la ubicación del elemento en la estructura de datos.
-
-Este proyecto puede ser implementado tanto con una interfaz gráfica como por consola.
-
-Si se desea una interfaz gráfica,se pueden utilizar herramientas como PyQT o Tkinter.
+Este proyecto puede ser implementado tanto con una interfaz gráfica como por consola. Si se desea una interfaz gráfica, se pueden utilizar herramientas como PyQT o Tkinter.
 
 ---
 
 # **Investigacion**
 
-
-
-
 ## **Búsqueda lineal (Linear search)**
-
-
-
 
 El algoritmo de búsqueda lineal (también conocido como búsqueda secuencial) es un método sencillo y básico para encontrar un valor específico en una lista o arreglo de elementos. 
 
@@ -46,8 +30,10 @@ def busqueda_lineal(lista, valor):
 
 En este ejemplo, la función `busqueda_lineal` recibe como parámetros la lista en la que se va a buscar el valor y el valor que se desea encontrar. La función utiliza un bucle `for` para recorrer la lista y una estructura condicional `if` para comparar cada elemento con el valor buscado. Si el valor se encuentra en la lista, la función retorna el índice del elemento encontrado. Si el valor no está presente en la lista, la función retorna `-1`.
 
-## **Búsqueda binaria (Binary search)**
 
+
+
+## **Búsqueda binaria (Binary search)**
 
 La búsqueda binaria, también conocida como búsqueda en mitad o búsqueda logarítmica, es un algoritmo eficiente para buscar un valor específico en una lista ordenada de elementos. A diferencia de la búsqueda lineal, que recorre la lista elemento por elemento, la búsqueda binaria divide repetidamente la lista en dos mitades y compara el valor buscado con el valor del elemento central. De esta manera, descarta la mitad de la lista en cada iteración, lo que permite encontrar el valor deseado de manera más rápida.
 
@@ -71,11 +57,9 @@ Es importante tener en cuenta que la búsqueda binaria solo se aplica a listas o
 
 
 
+
+
 ## **Búsqueda por interpolación (Interpolation search)**
-
-
-
-
 
 La búsqueda por interpolación es un algoritmo de búsqueda que se utiliza para encontrar un valor específico en una lista ordenada. A diferencia de la búsqueda binaria, que divide la lista en mitades iguales, la búsqueda por interpolación estima la posición del valor buscado utilizando una fórmula basada en la distribución de los valores en la lista.
 
@@ -108,8 +92,6 @@ La búsqueda por interpolación se basa en la suposición de que los elementos e
 
 
 ## **Búsqueda por salto (Jump search)**
-
-
 
 La búsqueda por salto (Jump search) es un algoritmo de búsqueda que se utiliza para encontrar un valor específico en una lista ordenada. A diferencia de la búsqueda lineal o binaria, que exploran los elementos uno por uno o dividen la lista en mitades, la búsqueda por salto salta a través de la lista en pasos fijos.
 

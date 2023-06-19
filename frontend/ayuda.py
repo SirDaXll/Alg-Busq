@@ -1,7 +1,12 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtWidgets import QApplication, QMainWindow, QDialog, QLabel, QPushButton, QWidget
 
 
-class Ui_Ayuda(object):
+class Ayuda(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setupUi
+
     def setupUi(self, Ayuda):
         Ayuda.setObjectName("Ayuda")
         Ayuda.resize(400, 400)
@@ -37,7 +42,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Ayuda = QtWidgets.QWidget()
-    ui = Ui_Ayuda()
+    ui = Ayuda()
     ui.setupUi(Ayuda)
     Ayuda.show()
     sys.exit(app.exec())

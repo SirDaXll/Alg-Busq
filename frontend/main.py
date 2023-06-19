@@ -1,8 +1,14 @@
+import sys
 from PyQt6 import QtCore, QtGui, QtWidgets
 from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import QApplication, QMainWindow, QDialog, QLabel, QPushButton, QWidget
+from ayuda import Ayuda
+from error import Error
+from resultado import Resultado
+from resultadoError import resultadoError
 
 
-class Ui_MainWindow(object):
+class Ui_MainWindow(QMainWindow):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setEnabled(True)
@@ -56,9 +62,15 @@ class Ui_MainWindow(object):
         self.pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(160, 350, 75, 24))
         self.pushButton.setObjectName("pushButton")
+
+        self.pushButton.clicked.connect(self.mostrarResultado)
+
         self.pushButton_2 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(370, 10, 21, 21))
         self.pushButton_2.setObjectName("pushButton_2")
+
+        self.pushButton_2.clicked.connect(self.mostrarAyuda)
+
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -87,6 +99,22 @@ class Ui_MainWindow(object):
         self.comboBox_2.setItemText(4, _translate("MainWindow", "Algoritmo 5"))
         self.pushButton.setText(_translate("MainWindow", "Buscar"))
         self.pushButton_2.setText(_translate("MainWindow", "?"))
+
+    def mostrarAyuda(self):
+        self.ayuda = Ayuda()
+        self.ayuda.show()
+
+    def mostrarError(self):
+        self.error = Error()
+        self.error.show()
+
+    def mostrarResultado(self):
+        self.resultado = Resultado()
+        self.resultado.show()
+
+    def mostrarResultadoError(self):
+        self.resultadoError = resultadoError()
+        self.resultadoError.show()
 
 
 if __name__ == "__main__":

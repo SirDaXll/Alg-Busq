@@ -10,7 +10,7 @@ class VentanaPrincipal(QWidget):
         self.resize(1200, 400)
 
         # Importar el dataset
-        self.ds = pandas.read_csv('Dataset/anime.csv')
+        self.ds = pandas.read_csv('dataset/anime.csv')
 
         # Widgets de búsqueda
         #self.id = QLineEdit()

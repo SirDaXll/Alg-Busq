@@ -56,6 +56,9 @@ class Ui_MainWindow(object):
         self.pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(160, 350, 75, 24))
         self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(370, 10, 21, 21))
+        self.pushButton_2.setObjectName("pushButton_2")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -83,6 +86,7 @@ class Ui_MainWindow(object):
         self.comboBox_2.setItemText(3, _translate("MainWindow", "Algoritmo 4"))
         self.comboBox_2.setItemText(4, _translate("MainWindow", "Algoritmo 5"))
         self.pushButton.setText(_translate("MainWindow", "Buscar"))
+        self.pushButton_2.setText(_translate("MainWindow", "?"))
 
 
 if __name__ == "__main__":
@@ -90,7 +94,7 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
-    icon = QIcon('edit/nota.png')
+    icon = QIcon('nota.png')
     MainWindow.setWindowIcon(icon)
     ui.setupUi(MainWindow)
     MainWindow.show()

@@ -101,8 +101,8 @@ class Ui_MainWindow(QMainWindow):
         self.pushButton_2.setText(_translate("MainWindow", "?"))
 
     def mostrarAyuda(self):
-        self.ayuda = Ayuda()
-        self.ayuda.show()
+        self.Ayuda = Ayuda()
+        self.Ayuda.show()
 
     def mostrarError(self):
         self.error = Error()
@@ -118,7 +118,6 @@ class Ui_MainWindow(QMainWindow):
 
 
 if __name__ == "__main__":
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()

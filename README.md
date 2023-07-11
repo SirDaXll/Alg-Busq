@@ -1,6 +1,7 @@
 # **Proyecto Integrador: Programa de Algoritmos de Búsqueda**
 
-Equipo de trabajo: Gabriel Cid, Franco Comas, Benjamin Kiel, Diego Molina, Nicolas Vega.
+Equipo de trabajo: Franco Comas, Benjamin Kiel, Diego Molina.
+Aportaciones: Gabriel Cid, Nicolas Vega.
 
 ## **Enunciado**
 

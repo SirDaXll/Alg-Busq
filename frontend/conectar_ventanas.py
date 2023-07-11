@@ -171,7 +171,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         ventanaResultado.show()
 
     def cargarDatos(self):
-        dataset_path = "anime.csv"
+        dataset_path = "dataset/anime.csv"
         try:
             dataframe = pd.read_csv(dataset_path)
 

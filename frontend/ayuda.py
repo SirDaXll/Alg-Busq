@@ -2,6 +2,10 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 
 
 class Ayuda(object):
+    def __init__(self):
+        super().__init__()
+        self.setupUi
+
     def setupUi(self, Ayuda):
         Ayuda.setObjectName("Ayuda")
         Ayuda.resize(400, 400)
